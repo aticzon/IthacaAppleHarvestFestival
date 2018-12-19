@@ -1,0 +1,670 @@
+/* general content */
+
+body{
+  font-family: serif;
+  font-size: 20px;
+  color: black;
+  background-image: url("../images/background2.jpg");
+}
+
+#container{
+  margin: 15px 30px;
+  background-color: white;
+}
+
+h1{
+  font-family: impact;
+  font-size: 80px;
+  padding-top: 50px;
+  margin-bottom: 0px;
+  color: #c91b0a;
+  text-align: center;
+}
+
+h2{
+  font-family: impact;
+  font-size: 30px;
+  color: #c91b0a;
+
+}
+
+h3{
+  font-family: impact;
+  font-size: 25px;
+  color: #c91b0a;
+}
+
+h3.date{
+  text-align:center;
+}
+
+h4{
+  text-align: left;
+}
+
+h5{
+  font-size: 25px;
+}
+
+strong{
+  font-weight: bold;
+}
+
+em{
+  font-style: italic;
+}
+
+figcaption{
+  font-size: 15px;
+  text-align: center;
+}
+
+.upper-case{
+  text-transform: uppercase;
+}
+
+/* Styling for header */
+
+header{
+  text-align: center;
+}
+
+.main-header{
+  text-decoration: none;
+}
+
+.datetime{
+  color: #c91b0a;
+  font-size: 20px;
+  margin: 5px 10px;
+}
+
+/*Citation styling */
+
+cite{
+  font-size: 15px;
+  margin: 1px 2px 10px 4px;
+}
+
+.cite-padding{
+  margin-top: 5px;
+}
+
+.center-citation{
+  text-align: center;
+}
+
+footer{
+  color: black;
+  padding: 20px 0px;
+  font-size: 15px;
+}
+
+/* Navigation Styling */
+
+nav{
+  margin-bottom: 5px;
+}
+
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav ul li{
+  display: inline;
+  font-size: 20px;
+  justify-content: center;
+}
+
+nav ul li a{
+  text-decoration:none;
+}
+
+nav ul li a{
+  display: block;
+  border: 3px;
+  border-style: solid;
+  border-radius: .5em;
+  border-color: #d91f1f;
+  padding: .4em 1em;
+  margin: 0.3em;
+}
+
+nav ul li a:hover{
+  background-color:#f7bdbd;
+}
+
+/*main content layout*/
+
+.homepage-content main{
+  margin: 10px 0px;
+  line-height: 1.5em;
+  font-size: 25px;
+}
+
+#content-holder{
+  margin: 0px auto;
+  margin: 0px 30px;
+  padding: 0px 50px;
+}
+
+/* index.html collage */
+
+.collage, .homepage-content{
+  margin: 0px 30px;
+}
+
+/*For the position:relative; part is how I figured out how to set the image to allow the text to go over the image. https://www.w3schools.com/howto/howto_css_image_text.asp */
+.collagecontainer{
+  position: relative;
+  width: 100%;
+  color: white;
+  margin-right: 5px;
+}
+
+/*This is how I learned how to place the text on top of the image https://www.w3schools.com/howto/howto_css_image_text.asp */
+.text-block{
+  position: absolute;
+  width: 100%;
+  left: 10px;
+  bottom: 0px;
+  font-family: serif;
+}
+
+/*This is how I learned how to place the text on top of the image https://www.w3schools.com/howto/howto_css_image_text.asp */
+.text-block2, .text-block3{
+  position: absolute;
+  width: 100%;
+  left: 10px;
+  bottom: 10%;
+}
+
+.text-block h2, .text-block2 h2, .center-block h2, .center-block p, .text-block3 h2{
+  color: #ffffff;
+}
+
+.text-block h2, .text-block2 h2, .text-block3 h2{
+  font-family: serif;
+  font-size: 23px;;
+}
+
+.hometext-no-decor{
+  text-decoration: none;
+}
+
+.limit-cite{
+  font-size: 12px;
+}
+
+/*Found the filter property that creates the blur and brightness effect from mozilla https://developer.mozilla.org/en-US/docs/Web/CSS/filter#Syntax*/
+.blur:hover img{
+  filter: brightness(0.7) blur(2px);
+}
+
+.center-block{
+  position: absolute;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 50px 50px;
+  top: 50px;
+  left: 150px;
+
+}
+
+.center-block h2{
+  font-size: 55px;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.center-block p{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#location{
+  font-size: 25px;
+  font-weight: normal;
+  margin-top: 5px;
+}
+
+/*Same code for every page with a collage of images*/
+.row1, .row2, .row3, .row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.collage-images{
+  width: 100%;
+}
+
+/* craft.html, food&drink.html, merchandise.html collage styling*/
+.craft-collagecontainer, .food-collagecontainer, .merch-collagecontainer{
+  margin: 0px 5px;
+  position: relative;
+  width: 100%;
+}
+
+.craft-collage, .merch-collage{
+  display: flex;
+  flex-direction: row;
+  margin: 0px 30px;
+  flex-wrap: nowrap;
+}
+
+.merch-collage{
+  padding-right: 80px;
+}
+
+.collage-food{
+  margin: 0 auto;
+  margin: 0px 30px;
+}
+
+/*merchandise.html pricing styling */
+.price-header{
+  margin-top: 0px;
+}
+
+.merch-text{
+  margin: auto 0px;
+  position: relative;
+  width: 100%;
+  width: 350px;
+}
+
+.merch-prices{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/*history.html image */
+figure img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 500px;
+}
+
+/*peformance and food & drinks schedule schedule formatting*/
+
+.sat-schedule, .sun-schedule, .food-vendors{
+  display: flex;
+  flex-direction: column;
+}
+
+.p-info, .food-info{
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
+  padding: 30px 10px;
+  flex-grow: 4;
+}
+
+.photo-citation{
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
+  padding: 5px 10px;
+}
+
+.p-info, .food-info{
+  border-left: none;
+}
+
+.remove{
+  border-top: none;
+}
+
+/* Styling for the list of vendors on the food & drinks page */
+.vendorname{
+  font-size: 20px;
+}
+
+/* Styling for the location of performers on performance.html */
+h4.location{
+  display:block;
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
+  padding: 5px 5px;
+  margin: 0px;
+}
+
+h4.location1{
+  border-bottom: none;
+}
+
+h4.location2{
+  border-top: none;
+}
+
+
+/* mobile 600px and under*/
+@media screen and (max-width: 600px){
+/*General Styling - that applies to all the pages */
+body{
+  width: 100%;
+  margin: 0px 0px;
+  font-size: 120%;
+}
+
+#container{
+  width: 100%;
+  margin: 0px 0px;
+}
+
+#content-holder{
+  padding: 0px 10px;
+  margin: 0px 0px;
+}
+
+header{
+  width: 100%;
+}
+
+h1 {
+  margin: 0px;
+  padding: 10px 0px;
+  font-size: 40px;
+}
+
+h2, h3, h4, h5{
+  font-size: 120%;
+}
+
+main{
+  margin: 0px 30px;
+}
+
+
+/*Adjusting the layout and font sizing on the index.html page*/
+h2.hometext-sizing{
+  font-size: 5%;
+}
+
+.homepage-content{
+  flex-direction: column;
+  padding: 10px 0px;
+}
+
+.homepage-content main{
+  font-size: 20px;
+}
+
+h2.text-block, h2.text-block2, h2.text-block3{
+  width: 100%;
+}
+
+/*Navigation Styling*/
+
+nav ul{
+  padding: 0px 0px;
+  margin: 0px 0px;
+}
+
+nav ul li{
+  display: flex;
+  flex-direction: column;
+  padding-left: 0px;
+  width: 100%;
+}
+
+/* Styling that applies to multiple of the collages */
+img.row1, img.row2, img.row3{
+  width: 100%;
+}
+
+.craft-collagecontainer, .collage-food{
+  margin: 0px 0px;
+}
+.craft-collage, .food-collagecontainer, .collage, .merch-collagecontainer{
+  margin: auto;
+  max-width: 90%;
+}
+
+.row1, .row2, .row3, .craft-collage, .merch-collage{
+  flex-direction: column;
+}
+
+.p-row1{
+  flex-direction: row;
+}
+
+.collage-images{
+  width: 100%;
+}
+
+/* merchandise.html */
+.merch-collage{
+  padding: 0px;
+}
+
+.merch-text{
+  max-width: 150px;
+}
+.percent, .map-size{
+  width: 100%;
+}
+
+/*Photo from the history.html */
+.anna{
+  width: 100%;
+}
+
+/* Performances Schedule */
+.sat-schedule, .sun-schedule, .food-vendors{
+  margin: 0px 30px;
+}
+
+.photo-citation{
+  width: 150px;
+}
+
+.p-info, .food-info{
+  width: 150px;
+}
+
+#location{
+  font-size: 15px;
+  margin: 0px;
+}
+
+/*faq.html */
+#faq-links{
+  margin: 0px 10px;
+}
+
+}
+
+/*Fixing the placement of text for the main photo on the index.html */
+@media screen and (min-width: 701px) and (max-width: 980px){
+.center-block{
+  position: absolute;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 2% 5%;
+  top: 10px;
+  left: 80px;
+  max-width: 50%;
+}
+
+.center-block h2{
+  font-size: 200%;
+  bottom: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.center-block p{
+  font-size: 130%;
+}
+
+#location{
+  font-size: 110%;
+}
+}
+
+/*Fixing the placement of text for the main photo on the index.html */
+@media screen and (min-width: 601px) and (max-width: 700px){
+
+.center-block{
+  position: absolute;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 2% 5%;
+  top: 20px;
+  left: 80px;
+  max-width: 50%;
+}
+
+.center-block h2{
+  font-size: 150%;
+  bottom: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.center-block p{
+  font-size: 100%;
+  font-weight: bold;
+  font-family: serif;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#location{
+  font-size: 100%;
+  font-weight: normal;
+  margin-top: 0px;
+  }
+}
+
+/*Fixing the placement of text for the main photo on the index.html */
+@media screen and (min-width: 501px) and (max-width: 600px){
+
+.center-block{
+  bottom: 0px;
+  left: 0px;
+  top: 0px;
+  padding: 15px 50px 50px 50px;
+}
+
+.center-block h2{
+  font-size: 180%;
+  margin: 5px 0px 0px 0px;
+}
+
+.center-block p{
+  font-size: 150%;
+  margin-top: 0px;
+  margin-bottom: 2px;
+}
+
+#location{
+  font-size: 140%;
+  margin: 0px;
+}
+}
+
+/*Fixing the placement of text for the main photo on the index.html */
+@media screen and (min-width: 401px) and (max-width: 500px){
+.center-block{
+  bottom: 0px;
+  left: 0px;
+  top: 0px;
+  padding: 15px 50px 50px 50px;
+}
+
+.center-block h2{
+  font-size: 150%;
+  margin: 5px 0px 0px 0px;
+}
+
+.center-block p{
+  font-size: 22px;
+  margin-top: 0px;
+  margin-bottom: 2px;
+}
+
+#location{
+  font-size: 18px;
+  margin: 0px;
+}
+}
+
+/*Fixing the placement of text for the main photo on the index.html */
+@media screen and (min-width: 331px) and (max-width: 400px){
+  .center-block{
+    bottom: 0px;
+    left: 0px;
+    top: 0px;
+    padding: 15px 50px 50px 50px;
+  }
+
+  .center-block h2{
+    font-size: 130%;
+    margin: 5px 0px 0px 0px;
+  }
+
+  .center-block p{
+    font-size: 22px;
+    margin-top: 0px;
+    margin-bottom: 2px;
+  }
+
+  #location{
+    font-size: 18px;
+    margin: 0px;
+  }
+
+}
+
+/*Fixing the placement of text for the main photo on the index.html */
+@media screen and (max-width: 330px){
+
+  .text-block3{
+    position: absolute;
+    width: 100%;
+    left: 10px;
+    bottom: 0px;
+  }
+
+  .text-block2{
+    bottom: 20px;
+  }
+
+  .center-block{
+    bottom: 50px;
+    left: 0px;
+    top: 0px;
+    padding: 15px 50px 50px 50px;
+  }
+
+  .center-block h2{
+    font-size: 100%;
+    margin: 5px 0px 0px 0px;
+  }
+
+  .center-block p{
+    font-size: 80%;
+    margin-top: 0px;
+    margin-bottom: 2px;
+  }
+
+#location{
+    font-size: 70%;
+}
+}
